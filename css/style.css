@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv  {
+    height: 600px;
+    width: 600px;
+    background-color: gray;
+    margin: 0 auto;
+    font-size: 0;
+
+}
+
+
+.mainDiv > div {
+    display: block;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.white {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+    animation-name: Trafic;
+    animation-duration: 5s;
+    animation-fill-mode: forwards
+
+}
+
+.red {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation-name: btn;
+    box-sizing: 50%;
+    display: block;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.red:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+.blue {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: blue;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation-name:Lights;
+    animation-duration: 5s;
+
+}
+
+@keyframes Trafic 
+{
+    0%{ 
+    
+        top: -100px;
+    }
+    100%{
+        top:0px;
+    }
+
+}
+
